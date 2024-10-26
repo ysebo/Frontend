@@ -1,0 +1,121 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1; 
+    padding-top: 70px; 
+    padding-bottom: 20px; 
+}
+
+header {
+    background-color: #333;
+    color: #7e95c7;
+    padding: 15px 0;
+    text-align: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000; 
+}
+
+nav {
+    display: flex;
+    align-items: center; 
+}
+
+nav img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px; 
+}
+
+nav .centered {
+    flex: 1; 
+    display: flex;
+    justify-content: center; 
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+}
+
+.hero {
+    background: linear-gradient(to bottom, #007BFF, #fff); 
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+}
+
+.about {
+    background: linear-gradient(to bottom, #007BFF, #fff); 
+    padding: 150px;
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+}
+
+.about img {
+    flex: 1;
+    max-width: 400px;
+    border-radius: 8px;
+}
+
+.services {
+    background: linear-gradient(to bottom, #007BFF, #fff); 
+    padding: 50px;
+    text-align: center;
+}   
+
+.cards {
+    display: flex;
+    gap: 20px; 
+  }
+  
+  .card {
+    background-color: #f9f9f9; 
+    border: 1px solid #007BFF   ; 
+    border-radius: 8px; 
+    padding: 20px; 
+    transition: transform 0.3s, background-color 0.3s; 
+    flex: 1; 
+  }
+  
+  .card:hover {
+    background-color: #4590e0; 
+    transform: scale(1.05);
+    cursor: pointer; 
+  }
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .about, .cards {
+        flex-direction: column; 
+    }
+}
